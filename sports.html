@@ -1,0 +1,780 @@
+''
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+body {
+background: #DFC2F2;
+	background-image: linear-gradient( to right, #b3daff,#ede6ff);
+	background-attachment: fixed;	
+	background-size: cover;
+  
+	}
+  .navsection{
+    width: 100%;
+    height: 20vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-image: linear-gradient(to top,#fff 80%, #c3f5ff 20%);
+}
+
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 20% ,#854fee 30% ); 
+    padding-left: 0;
+    box-sizing: border-box;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: aagepiche 3s linear infinite;
+    }
+    @keyframes aagepiche{
+        from{ padding-left: 40px;}
+        to{ padding-right: 40px;}
+    }
+    nav{
+        width: 60%;
+       /* background-color: yellow;*/
+        display: flex;
+        justify-content: space-around; 
+    }
+    nav a{
+        text-decoration: none;
+        text-transform: uppercase;
+        columns: #000;
+        font-weight: 900;
+        font-size: 17px;
+        position: relative;
+    }
+    nav a:first-child{
+    color:#4458dc;
+    }
+    nav a:before{
+        content: "";
+        Position: absolute;
+       top: 0%;
+       left: 0;
+       width: 0;
+       height: 100%;
+       border-bottom:  2px solid #4458dc;
+       transition: all 0.4s linear;
+    }
+    nav a:hover:before{
+        width: 100%
+    }
+    
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+  
+	
+}
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-details h1{
+	font-family: 'sans serif', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+	
+
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
+
+#container .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float:right;
+	width: 45%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);
+}
+.wrapper {
+padding-top: 120px;
+}
+.card-img-top {
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.card-body{
+    text-align: center;
+    box-shadow: 0px 15px 15px -8px rgba(0,0,0,0.5)
+}
+.card-body h6 {
+font-size: 14px;
+text-transform: uppercase;
+color: deeppink;
+}
+.card-title {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 24px;
+}
+
+
+
+.socials a {
+width: 40px;
+height: 40px;
+display: inline-block;
+border-radius: 50%;
+margin: 0 5px;
+}
+.socials a i {
+color: #fff;
+padding: 12px 0;
+}    
+
+.socials a:nth-child(1) {
+background: #3b5998;
+}.socials a:nth-child(2) {
+background: #ff0000;
+}.socials a:nth-child(3) {
+background: #007bb5;
+}.socials a:nth-child(4) {
+background: #ea4c89;
+}
+
+@media (max-width: 800px){
+    .mx-30{
+        margin-bottom: 30px;
+    }
+}
+.card::after {
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 35px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 19px 28px 5px rgba(64,64,64,0.09);
+    box-shadow: 0 19px 28px 5px rgba(64,64,64,0.09);
+    content: '';
+    z-index: -1;
+}
+a.card {
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    border: 0;
+    border-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09);
+    box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09);
+}
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09) !important;
+    box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09) !important;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.bg-white {
+    background-color: #fff !important;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.d-block {
+    display: block !important;
+}
+img, figure {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.card-text {
+    padding-top: 12px;
+    color: #8c8c8c;
+}
+
+.text-sm {
+    font-size: 12px !important;
+}
+p, .p {
+    margin: 0 0 16px;
+}
+
+.card-title {
+    margin: 0;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.pt-1, .py-1 {
+    padding-top: .25rem !important;
+}
+
+.head-icon{
+    margin-top:18px;
+    color:#FF4500
+}
+
+</style>
+</head>
+<section class="navsection">
+  
+  <nav>
+      <a href="homepage.html">Home</a>
+      <a href="#Sports">Sports</a>
+      
+      
+     
+      <a href="#Foods">Foods</a>
+
+      
+      <a href="#Transportation">Transportation</a>
+      <a href="Contact - Copy.html">Contact</a>
+     
+        
+          
+        </div> 
+        </a>
+  </nav>
+</section>
+<section id="Sports">
+    <p class="contain"><center><b><h1> 🏆 𝕄𝕐 𝔽𝔸𝕍𝕆𝕌ℝ𝕀𝕋𝔼 𝕊ℙ𝕆ℝ𝕋𝕊 ℙ𝕃𝔸𝕐𝔼ℝ𝕊 🏆
+    </h1></b></center></p>
+<div id="container">	
+	
+	<div class="product-details">
+		
+	<h1>USAIN BOLT</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+		
+			<p class="information">I was slowing down long before the finish and wasn't tired at all. I could have gone back to the start and done it all over again.</p>
+
+		
+		
+<div class="control">
+	
+	
+  
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="images/interest1.jpg">
+    <div class="info">
+	<h2> Description</h2>
+    <ul>
+        <li><strong>Country : Jamaican </strong></li>
+        <li><strong>DoB : 21 August 1986 (age 35) </strong></li>
+
+        <li><strong>Field : </strong> Athletic</li>
+
+        <li><strong>Achievements : </strong> 5+</li>
+        <li><strong>Height : </strong> 1.95 m (6 ft 5 in) </li>
+        <li><strong>Weight : </strong> 94 kg (207 lb)</li>
+        
+    </ul>
+</div>
+</section>
+<section>
+    <div id="container">	
+        
+        <div class="product-details">
+            
+        <h1>MS DHONI</h1>
+        <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </span>
+            
+                <p class="information">"It's like having 100 kgs put over you. That's good enough to weigh you down. After that even if you put a mountain, it will not make a difference." </p>
+            
+            
+    <div class="control">
+        
+      
+    </div>
+                
+    </div>
+        
+    <div class="product-image">
+        
+        <img src="images/interest3.jpg">    
+    <div class="info">
+        <h2> Description</h2>
+       
+        <ul>
+            <li><strong>Country : India </strong></li>
+            <li><strong>DoB : 	7 July 1981 (age 40) </strong></li>
+    
+            <li><strong>Field : </strong> Cricket</li>
+    
+            <li><strong>Achievements : </strong> 5+</li>
+            <li><strong>Height : </strong>	1.80 m (5 ft 11 in)</li>
+            <li><strong>Batting : </strong>	Right-handed</li>          
+            
+        </ul>
+    </div>
+    </section>
+    <section>
+        <div id="container">	
+            
+            <div class="product-details">
+                
+            <h1>VISWANATHAN ANAND</h1>
+            <span class="hint-star star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+                
+                    <p class="information">“Emotions tend to get in the way of clear thinking. Whether it’s impatience, frustration,these to consume the mind results in a loss of focus and distraction from learning, and keeps you from taking the right decisions and achieving your goal.</p>        
+                
+                
+        <div class="control">
+            
+            
+            
+        </div>
+                    
+        </div>
+            
+        <div class="product-image">
+        
+            <img src="images/interest2.jpg">
+        
+        <div class="info">
+            <h2> Description</h2>
+            <ul>
+                <li><strong>Country : India</strong></li>
+                <li><strong>DOB     : 11 December 1969 (age 52)</strong></li>
+
+                <li><strong>Field : </strong> Chess</li>
+                <li><strong>Title : </strong> Grand master</li>
+
+                <li><strong>Achievements : </strong> 15+</li>
+                <li><strong>Awards : Padma vibhusan,Padma shri</strong> </li>
+                
+
+                
+            </ul>
+        </div>
+        </section>
+        <section>
+            <div id="container">	
+                
+                <div class="product-details">
+                    
+                <h1>SAINA NEHWAL</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                    
+                        <p class="information">"Nehwal has achieved several milestones in badminton for India. She is the only Indian to have won at least one medal in every BWF major individual event, namely the Olympics, the BWF World Championships, and the BWF World Junior Championships."</p>                  
+                    
+            <div class="control">
+                
+               
+                
+            </div>
+                        
+            </div>
+                
+            <div class="product-image">
+                
+                <img src="images/interest.jpg"   />
+            
+            <div class="info">
+                <h2> Description</h2>
+                <ul>
+                    <li><strong>Country : India</strong></li>
+<li><strong>DOB : 17 March 1990 (age 32)</strong></li>
+                    <li><strong>Field : </strong> Badminton</li>
+                    <li><strong>Achievements : </strong> 15++</li>
+                    <li><strong>Height : </strong>	1.65 m (5 ft 5 in) </li>
+                    <li><strong>Weight : </strong>	65 kg (143 lb</li>
+                    
+                </ul>
+            </div>
+            </section>
+            <h2><center> MY FAVOURITE FOODS 👍🍮</center></h2>
+            <br> 
+                    <hr>
+    <p><h2><center>BREAK FAST</center></h2></p>
+    <hr>   
+            <section id="Foods">
+
+                <div class="wrapper">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mx-30">
+                              <img src="images/food12.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">
+                IDLI & DOSA</h5>
+                <h6>
+                So many times</h6>
+                <p class="card-text">
+                  The plain idlis and Dosa'es are mild in taste, a condiment is considered essential. Idlis are often served with chutneys (coconut based), sambar and Medu vada. However, this varies greatly by region and personal taste, it is also often served with kaara chutney (onion based) or spicy fish curries. The dry spice mixture podi is convenient while travelling.</p>                
+                </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                            <div class="card mx-30">
+                              <img src="images/food6.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">
+                PONGAL & VADA</h5>
+                <h6>
+                Sometimes</h6>
+                <hp class="card-text">
+                The  Ven Pongal is a very popular dish from South Indian cuisine. It is a definite item in the menu for Pongal Celebration in India. It serves as an ideal breakfast with an excellent combination of coconut chutney, Vada & hot sambar. </p>                
+                </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                            <div class="card mx-30">
+                              <img src="images/food7.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">
+                FRUITS & MILK</h5>
+                <h6>
+                Sometimes</h6>
+                <p class="card-text">
+                  Apples. One of the most popular fruits, apples are chock-full of nutrition and
+                  Blueberries. Blueberries are well known for their antioxidant and anti-inflammatory properties</p>               
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+                <br> 
+                    <hr>
+    <p><h2><center>LUNCH</center></h2></p>
+    <hr> 
+                <section>
+
+                    <div class="wrapper">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card mx-30">
+                                  <img src="images/food3.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">
+                    FULL MEALS</h5>
+                    <h6>
+                    So many times..</h6>
+                    <p class="card-text">
+                      Full course meals are made up of three courses: an appetizer, main dish, and dessert. Also known as a three-course meal or a standard course meal, you will sometimes see restaurants offering a full menu with these three items.</p>                    
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                                <div class="card mx-30">
+                                  <img src="images/food8.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">
+                    VEGETARIAN</h5>
+                    <h6>
+                    Sometimes</h6>
+                    <hp class="card-text">
+                      Therefore, the simplest form of bread is vegan. However, some types include additional ingredients like sweeteners or fats — both of which can be of animal origin. For instance, some recipes may use eggs, butter, milk, or honey </p>                    
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                                <div class="card mx-30">
+                                  <img src="images/food9.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">
+                    NON-VEG</h5>
+                    <h6>
+                    Sometimes...</h6>
+                    <p class="card-text">
+                      The humble egg doesn't fall into this category and is therefore included in a vegetarian eating pattern.
+                      
+                    </p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                    <br> 
+                    <hr>
+    <p><h2><center>DINNER</center></h2></p>
+    <hr> 
+                    <section>
+
+                        <div class="wrapper">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card mx-30">
+                                      <img src="images/food4.jpg" width="350" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">
+                        CHAPATI</h5>
+                        <h6>
+                        So many times</h6>
+                        <p class="card-text">
+                          Chapati, also known as roti, rotli, safati, shabaati, phulka, chapo, and roshi, is an unleavened flatbread originating from the Indian subcontinent and staple in India, Nepal,etc.,</p>                        
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                                    <div class="card mx-30">
+                                      <img src="images/food10.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">
+                        IDLI & DOSA</h5>
+                        <h6>
+                        Sometimes</h6>
+                        <hp class="card-text">
+                          A dosa is a thin batter-based dish originating from South India, made from a fermented batter predominantly consisting of lentils and rice.</p>                        
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                                    <div class="card mx-30">
+                                      <img src="images/food11.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">
+                        FRUITS & MILK</h5>
+                        <h6>
+        Sometimes..</h6>
+                        <p class="card-text">
+                          This will come as a shock but experts suggest not combining milk with any type of fruit. Ayurveda suggests consuming milk and fruits separately.</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>  
+                        <hr>
+                        <p><h2><center>FAVOURITE VEHICLES</center></h2></p>
+                        <hr> 
+                        <section>
+<section class="container pt-3 mb-3" id="Transportation">
+    <h2 class="h3 block-title text-center">Travelling is an art<small>“It is good to have an end to journey toward</small></h2>
+    <div class="row pt-5 mt-30">
+        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+            <a class="card" href="#">
+                <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 60px; height: 60px; margin-top: -45px;"><img src="images/vehicle.jpg"></div>
+                <div class="card-body text-center">
+                    <h3 class="card-title pt-1">KIDS Cycle</h3>
+                    <p class="card-text text-sm">The average age for kids to learn to ride a bike is between 3 and 7 years old - but this is just an average. Some children may be ready to start building their basic cycling skills earlier.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+            <a class="card" href="#">
+                <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 60px; height: 60px; margin-top: -45px;"><img src="images/vehicle1.jpg"> </div>
+                <div class="card-body text-center">
+                    <h3 class="card-title pt-1">CYCLE</h3>
+                    <p class="card-text text-sm">“You never have the wind with you — either it is against you or you're having a good day.” “Life is like riding a bicycle – in order to keep your balance, you must keep moving.” “Don't buy upgrades, ride up grades.”.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+            <a class="card" href="#">
+                <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 60px; height: 60px; margin-top: -45px;"><img src="images/vehicle2.png"></div>
+                <div class="card-body text-center">
+                    <h3 class="card-title pt-1">BIKES</h3>
+                    <p class="card-text text-sm">Life is a journey and I hope that your new bike would add more thrilling experience to your life. Wish you good luck with your new ride...</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+            <a class="card" href="#">
+                <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 60px; height: 60px; margin-top: -45px;"><img src="images/vehicle4.jpg"></div>
+                <div class="card-body text-center">
+                    <h3 class="card-title pt-1">TRAINS</h3>
+                    <p class="card-text text-sm"> What is the longest train trip in the world?
+                        Image result
+                        The Trans–Siberian Railway which connects Moscow with the Russian far east is still the world's longest direct rail route, running for 9,259 kilometers or 5,753 miles. </p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+            <a class="card" href="#">
+                <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><img src="images/vehicle3.png"></div>
+                <div class="card-body text-center">
+                    <h3 class="card-title pt-1">SCHOOL BUS</h3>
+                    <p class="card-text text-sm">Driving a 30 Ft Yellow brick with wheels full of screaming bouncing kids is so easy! Said no bus driver ever.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-30 pb-5">
+            <a class="card" href="#">
+                <div class="box-shadow bg-white rounded-circle mx-auto text-center" style="width: 90px; height: 90px; margin-top: -45px;"><img src="images/vehicle5.jpg"></div>
+                <div class="card-body text-center">
+                    <h3 class="card-title pt-1">AEROPLANE</h3>
+                    <p class="card-text text-sm">It makes air flow rapidly over the wings, which throw the air down toward the ground, generating an upward force called lift that overcomes the plane's weight and holds it in the sky..</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+</div>
+</body>
+
+</section>
+
